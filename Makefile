@@ -11,7 +11,7 @@ CURRENT_BRANCH=$(shell git branch | grep '*' | tr -d '* ')
 # Github settings
 UPLOAD_HOST=https://uploads.github.com
 API_HOST=https://api.github.com
-OWNER=cakephp
+OWNER=shrkz1
 REMOTE=origin
 
 ifdef GITHUB_TOKEN
