@@ -186,4 +186,4 @@ clean-component-%:
 	- git push -f $* :$(CURRENT_BRANCH)
 
 # Top level alias for doing a release.
-release: guard-VERSION tag-release components-tag package publish
+release: guard-VERSION tag-release package publish
