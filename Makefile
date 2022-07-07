@@ -92,7 +92,7 @@ bump-version: guard-VERSION
 # Tag a release
 tag-release: guard-VERSION bump-version
 	@echo "Tagging $(VERSION)"
-	git tag --no-sign -s $(VERSION) -m "CakePHP $(VERSION)"
+	git tag --no-sign -m "CakePHP $(VERSION)" $(VERSION)
 	git push $(REMOTE)
 	git push $(REMOTE) --tags
 
