@@ -1,0 +1,28 @@
+name: Releases
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version'
+        required: true
+        default: '3.x.x'
+
+jobs:
+  print-inputs:
+    runs-on: ubuntu-22.04
+    steps:
+      - run: |
+          echo "Version: ${{ github.event.inputs.version }}"
+
+  draft-release:
+    name: Generate Draft Release
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v3
+
+      - name: Publish
+        run: |
+          make release -e VERSION=${{ github.event.inputs.version }} -e GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
