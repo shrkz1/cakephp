@@ -1,9 +1,5 @@
 name: Mark stale issues and pull requests
 
-on:
-  schedule:
-  - cron: "0 0 * * *"
-
 permissions:
   contents: read
 
@@ -14,7 +10,7 @@ jobs:
       issues: write  # for actions/stale to close stale issues
       pull-requests: write  # for actions/stale to close stale PRs
     runs-on: ubuntu-latest
-    
+
     steps:
     - uses: actions/stale@v5
       with:
