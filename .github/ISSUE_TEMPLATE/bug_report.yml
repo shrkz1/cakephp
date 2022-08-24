@@ -19,10 +19,25 @@ body:
       placeholder: "3.15.0"
     validations:
       required: true
-  - type: input
+  - type: textarea
     attributes:
-      label: PHP Version
-      description: "The php version used, if needed."
-      placeholder: "8.0"
+      label: Steps To Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. On section Legals
+        2. I clicked Add New
+        3. I got an error
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: A concise description of what you expected to happen.
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Current Behavior
+      description: A concise description of what you're experiencing.
     validations:
       required: false
