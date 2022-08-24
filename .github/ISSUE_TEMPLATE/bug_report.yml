@@ -1,22 +1,22 @@
 name: Bug Report
 description: Create a bug report
-labels: ["defect"]
+labels: ["bug"]
 body:
   - type: textarea
     attributes:
       label: Description
       description: "Please provide a description and way to reproduce the problem."
       placeholder: |
-        Please use the CakePHP Slack channel, Discord channel or IRC channel for questions.
+        Please use Eramba Discussions for questions.
 
-        https://cakephp.org/get-involved#getHelp
+        https://discussions.eramba.org
     validations:
       required: true
   - type: input
     attributes:
-      label: CakePHP Version
-      description: "The CakePHP version used."
-      placeholder: "4.3.0"
+      label: Eramba Version
+      description: "Eramba version used."
+      placeholder: "3.15.0"
     validations:
       required: true
   - type: input
