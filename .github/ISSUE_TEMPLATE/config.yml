@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
   - name: Community Support
-    url: https://cakephp.org/get-involved#getHelp
-    about: Please use the CakePHP Slack channel, Discord channel or IRC channel for questions.
+    url: https://discussions.eramba.org
+    about: Please use the Discussions for questions.
