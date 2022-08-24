@@ -33,11 +33,13 @@ body:
     attributes:
       label: Expected Behavior
       description: A concise description of what you expected to happen.
+      placeholder: To not get an error
     validations:
       required: false
   - type: textarea
     attributes:
       label: Current Behavior
       description: A concise description of what you're experiencing.
+      placeholder: Im getting an error
     validations:
       required: false
